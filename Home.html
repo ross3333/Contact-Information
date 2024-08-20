@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Form</h1>
+        <form action="" method="post">
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Name" class="oval-input">
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Email" class="oval-input">
+            </div>
+            <div class="input-group">
+                <textarea name="message" placeholder="Message" class="oval-input"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="countdown"></div>
+    </div>
+</body>
+</html>
